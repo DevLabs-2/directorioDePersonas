@@ -1,5 +1,5 @@
 
-const Personas = [
+var Personas = [
   {
     "id":"1",
     "nombre":"Sinclair",
@@ -422,4 +422,4 @@ const Personas = [
   },
 ];
 
-export default Personas;
+export default {Personas}
