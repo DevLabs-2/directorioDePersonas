@@ -2,7 +2,10 @@
 import { useEffect, useState } from "react";
 import Personas from "../../../Personas";
 import PersonaCard from "./PersonaCard";
-import styles from "../page.module.css"
+import styles from "../page.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import flecha from "../imgs/flecha.png"
 function ListaPersonas ({pag, navigation}) {
     const pagina = pag;
     const arrayPersonas = Personas;
@@ -22,12 +25,16 @@ function ListaPersonas ({pag, navigation}) {
     const [displayPersonas, setDisplayPersonas] = useState([]);
     useEffect(() => {
         setDisplayPersonas(getPersonas());
-        console.log(pagina)
     }, [pagina]);
     const lista = displayPersonas.map(person => <PersonaCard key={person.id} props={person}></PersonaCard>);
     return(
         <div className={styles.listaPersonas}>
             <ul className={styles.ulgrid}>{lista}</ul>
+            {lista.length === 0 && 
+            <>
+                <h2>Ups! Parece que no hay más personas</h2>
+            </>
+            }
         </div>
     )
 }

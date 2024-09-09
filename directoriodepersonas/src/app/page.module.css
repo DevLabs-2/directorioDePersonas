@@ -173,6 +173,8 @@ a.secondary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px;
+  max-height: 150px;
+  min-height: 150px;
   margin: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -199,7 +201,6 @@ a.secondary {
 }
 
 .listaPersonas {
-  margin-top: 30rem;
   height: 500px;
   width: 100%;
 }
@@ -221,4 +222,72 @@ a.secondary {
   height: 30px;
   cursor: pointer;
   margin: 0 10px;
+}
+
+.inputPag{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+#arrowRotate {
+  transform: rotate(180deg);
+}
+
+.personaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.personaContainer h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.personaContainer p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #afafaf;
+}
+
+.backButton:active {
+  transform: scale(0.95);
+}
+
+.NavBar {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

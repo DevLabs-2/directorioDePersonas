@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from '../page.module.css'
 import flecha from '../imgs/flecha.png'
 function PasadorPag({ pag, setPag }) {
@@ -12,13 +13,13 @@ function PasadorPag({ pag, setPag }) {
         setInputValue(newValue)
     }
     const handleArrowPress = (dir) => {
-        setInputValue(inputValue + dir)
+        setInputValue(parseInt(inputValue) + parseInt(dir))
     }
     return (
         <div className={styles.pasador}>
-            <img src={flecha} onClick={() => handleArrowPress(-1)} className={styles.arrow}></img>
-            <input type='text' onChange={handleInputChange}  value={inputValue}></input>
-            <img src={flecha} onClick={() => handleArrowPress(1)} className={styles.arrow}></img>
+            <Image src={flecha} alt='FlechaIzq' onClick={() => handleArrowPress(-1)} className={styles.arrow} id={styles.arrowRotate}></Image>
+            <input type='text' onChange={handleInputChange} value={pag} className={styles.inputPag}></input>
+            <Image src={flecha} alt='FlechaDer' onClick={() => handleArrowPress(1)} className={styles.arrow}></Image>
         </div>
     );
 }
