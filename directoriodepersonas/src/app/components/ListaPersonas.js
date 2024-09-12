@@ -32,7 +32,7 @@ function ListaPersonas ({pag, navigation}) {
             <ul className={styles.ulgrid}>{lista}</ul>
             {lista.length === 0 && 
             <>
-                <h2>Ups! Parece que no hay más personas</h2>
+                <h2 style={{marginLeft:"6%", marginTop:"30px"}}>Ups! Parece que no hay más personas</h2>
             </>
             }
         </div>

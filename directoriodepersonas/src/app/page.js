@@ -14,7 +14,7 @@ function Home() {
   }
   return (
     <div className={styles.page}>
-      <NavBar></NavBar>
+      <NavBar></NavBar> 
       <ListaPersonas pag={pag}></ListaPersonas>
       <PasadorPag pag={pag} setPag={pagSetter}></PasadorPag>
     </div>

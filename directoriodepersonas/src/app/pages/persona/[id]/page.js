@@ -11,14 +11,17 @@ export default function PersonaScreen({ params }) {
     const persona = arraypersonas.find(p => p.id === params.id);
     
     return (
-        <div>
-            <Link href={`/`} className={styles.backButton} style={{marginTop: '1rem', marginLeft: '1rem'}}> <Image src={flecha} alt='FlechaIzq' className={styles.arrow} id={styles.arrowRotate}></Image> Atrás</Link>
-           
-            <div className={styles.personaContainer}>
-                <h1>{`${persona.nombre} ${persona.apellido}`}</h1>
-                <p>Email: {persona.email}</p>
-                <p>Edad: {persona.edad}</p>
+        <>
+            <div className={styles.page}>
+                <Link href={`/`} className={styles.backButton} style={{marginTop: '1rem', marginLeft: '-110rem'}}> <Image src={flecha} alt='FlechaIzq' className={styles.arrow} id={styles.arrowRotate}></Image> Atrás</Link>
+            
+                <div className={styles.personaContainer}>
+                    <h1>{`${persona.nombre} ${persona.apellido}`}</h1>
+                    <p>Email: {persona.email}</p>
+                    <p>Edad: {persona.edad}</p>
+                </div>
             </div>
-        </div>
+        </>
+        
     );
 }
