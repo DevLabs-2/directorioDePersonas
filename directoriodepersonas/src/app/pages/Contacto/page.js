@@ -1,10 +1,10 @@
 import NavBar from "../../components/NavBar";
-import styles from "../page.module.css"
+import styles from "../../page.module.css"
 
 function Contacto(){
     return (
         <>
-            <div>
+            <div className={styles.page}>
                 <NavBar></NavBar>
                 <section>
                     <div className={styles.contactContainer}>

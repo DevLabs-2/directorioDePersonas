@@ -68,7 +68,7 @@ var Personas = [
     "nombre":"Jewelle",
     "apellido":"Shoosmith",
     "email":"jshoosmith9@themeforest.net",
-    "edad":"35"
+    "edad":"65"
   },
   {
     "id":"11",
@@ -131,7 +131,7 @@ var Personas = [
     "nombre":"Derry",
     "apellido":"Currer",
     "email":"dcurreri@so-net.ne.jp",
-    "ed ad":"44"
+    "edad":"44"
   },
   {
     "id":"20",

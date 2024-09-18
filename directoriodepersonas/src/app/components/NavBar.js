@@ -4,8 +4,9 @@ export default function NavBar ({}) {
     return (
         <>
             <div className={styles.navbar}>
-                <Link href={"/Estadisticas"}>Estadisticas</Link>
-                <Link href={"/Contacto"}>Contacto</Link>
+                <Link href={"/"}>Home</Link>
+                <Link href={"../pages/Estadisticas"}>Estadisticas</Link>
+                <Link href={"../pages/Contacto"}>Contacto</Link>
             </div>
         </>
     );
